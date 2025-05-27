@@ -14,9 +14,9 @@ body {
  
 /* Header */
 header {
-    background-color: #fff;
+    background-color: #87CEEB;
     border-bottom: 1px solid #eaeaea;
-    padding: 20px 40px;
+    padding: 30px 60px;
 }
  
 .container {
@@ -26,7 +26,18 @@ header {
     justify-content: space-between;
     align-items: center;
 }
- 
+
+.btn-cadastro {
+    background-color: #228B22;
+    color: #f7f7f7;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    
+
+}
+
 .logo {
     display: flex;
     align-items: center;
@@ -50,17 +61,31 @@ nav ul {
 }
  
 nav a {
+    display: flex;
+    align-items: center;
     text-decoration: none;
-    color: #555;
+    color: #000000;
     font-weight: 500;
+    font-size: 16px;
     padding: 10px 15px;
-    border-radius: 5px;
+    border-radius: 6px;
     transition: background 0.3s ease, color 0.3s ease;
+    height: 40px;
+    box-sizing: border-box;
+    font-weight: bold;
 }
  
-nav a.active, nav a:hover {
-    background-color: #39aee1;
+nav a:hover {
+    background-color: #228B22;
     color: #fff;
+    
+
+}
+
+.active{
+   color: white;
+  
+   
 }
  
 /* Introdução */
@@ -109,3 +134,93 @@ footer {
     font-size: 14px;
     color: #777;
 }
+
+@media (max-width: 768px) {
+    .image-text,
+    .image-text.reverse {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+ 
+    .image-text img {
+      width: 90%;
+      max-width: 300px;
+    }
+ 
+    .image-text .text {
+      text-align: left;
+      padding: 0 10px;
+      font-size: 15px;
+    }
+ 
+    .image-text .text h2 {
+      font-size: 24px;
+    }
+ 
+    .image-text .text p {
+      font-size: 16px;
+    }
+ 
+    h1 {
+      font-size: 32px;
+      padding: 20px 10px;
+    }
+ 
+    body {
+      font-size: 16px;
+    }
+ 
+   
+    header {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+ 
+   
+    .logo {
+      display: none;
+    }
+ 
+   
+    .menu {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      order: -1;
+    }
+ 
+    .menu nav ul {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+ 
+    .menu nav ul li {
+      width: 100%;
+    }
+ 
+    .menu nav ul li a {
+      display: block;
+      width: 100%;
+      padding: 10px 15px;
+      font-size: 18px;
+      text-align: center;
+    }
+ 
+    .btn-cadastro {
+      display: block;
+      width: 100%;
+      text-align: center;
+      padding: 12px 0;
+      font-size: 18px;
+      border-radius: 6px;
+    }
+  }
